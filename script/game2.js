@@ -50,7 +50,7 @@ const player = {
 		this.displayDialogue();
 	},
 	speakAdvice() {
-		playerFace.makeExpression("neutral");
+		// playerFace.makeExpression("neutral");
 		this.endPreviousDialogue();
 		const advice = [
 			"You need to consider both our answers",
@@ -176,8 +176,8 @@ const computer = {
 		this.displayDialogue();
 	},
 	speakResetted() {
-		computerFace.makeExpression("sad");
-		playerFace.makeExpression("motivated");
+		// computerFace.makeExpression("sad");
+		// playerFace.makeExpression("motivated");
 		// console.log(computerFace.identity);
 		this.endPreviousDialogue();
 		const resetted = [
@@ -209,7 +209,7 @@ const computer = {
 		this.displayDialogue();
 	},
 	speakDefeat() {
-		computerFace.makeExpression("sad");
+		// computerFace.makeExpression("sad");
 		this.endPreviousDialogue();
 		const defeat = [
 			"Impossible, how?!",
