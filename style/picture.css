@@ -1,0 +1,136 @@
+.triangle {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 1rem solid transparent;
+	border-right: 1rem solid transparent;
+	border-top: 1rem solid #63b995; /* Change color as needed */
+	transform: translate(-50%, -50%);
+	bottom: -1rem;
+	left: 50%;
+	z-index: 100;
+}
+
+/* .profile-icon {
+	padding: 1rem;
+} */
+
+.guess-button {
+	border: unset;
+	padding: 13px;
+	max-width: fit-content;
+	font-weight: 800;
+}
+
+.answers-text {
+	max-width: 3rem;
+	min-height: 3rem;
+	/* padding: 2rem; */
+	text-align: center;
+}
+.answers-text {
+	border: none;
+	outline: none;
+	background-color: cadetblue;
+}
+
+.dialogue-box {
+	position: absolute;
+	z-index: 100;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: monospace;
+	background-color: white;
+	border-radius: 13px;
+	padding: 3px;
+	top: -13px;
+	opacity: 0;
+	min-width: 233px;
+}
+
+.main-announcer {
+	position: fixed;
+	z-index: 100;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: monospace;
+	background-color: white;
+	border-radius: 13px;
+	padding: 3px;
+	top: 13px;
+	max-width: 377px;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	text-align: center;
+	opacity: 0;
+}
+.main-countdown {
+	position: absolute;
+	top: 8rem;
+	max-width: 233px;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	padding: 34px;
+	opacity: 0;
+	border-radius: 21px;
+}
+.side-nav {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	max-width: fit-content;
+	padding: 13px;
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+}
+.side-nav button {
+	max-width: 55px;
+	padding: 5px;
+	border: white 1px 1px solid;
+	font-weight: bold;
+	border-radius: 5px;
+}
+@media (805px > width) {
+	.side-nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: unset;
+		max-width: unset;
+		min-height: 12px;
+		padding: 13px;
+		z-index: 100;
+		flex-direction: row;
+	}
+}
+
+@media (600px > width) {
+	.main-countdown {
+		position: absolute;
+		top: 8rem;
+		max-width: 233px;
+		text-align: center;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		padding: 13px;
+		opacity: 0;
+		border-radius: 21px;
+	}
+}
+
+@media (700px > width) {
+	.dialogue-box {
+		font-size: 13px;
+		min-width: 144px;
+	}
+	.computer-dialogue {
+		right: 0;
+	}
+	.player-dialogue {
+		left: 0;
+	}
+}

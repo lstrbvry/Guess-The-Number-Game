@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Guess The Number Game</title>
+	</head>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			font-family: monospace;
+			box-sizing: border-box;
+			position: relative;
+			width: 100%;
+		}
+		img {
+			width: 100%;
+			display: block;
+		}
+		body {
+			padding: 13px;
+		}
+		.title {
+			margin-bottom: 13px;
+			text-align: center;
+		}
+		.container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+			gap: 13px;
+		}
+		.numberOne {
+			padding: 13px;
+			margin: 3px;
+			box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.288);
+			border-radius: 3px;
+		}
+		img {
+			border-radius: 5px;
+		}
+		img:hover {
+			/* border: 1px solid red; */
+			box-shadow: -1px 0px 5px rgba(0, 0, 0, 0.548);
+		}
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		a:hover {
+			color: blue;
+		}
+		/* a:visited {
+			color: black;
+		} */
+		.back {
+			margin: 13px;
+		}
+	</style>
+	<body>
+		<h1 class="title">About/ Tutorial Page</h1>
+		<div class="container">
+			<div class="numberOne">
+				<a href="aboutImage/Play.png"
+					><img src="aboutImage/Play.png" alt=""
+				/></a>
+				<div class="explain">
+					1. Click on the play button to start a new round
+				</div>
+			</div>
+			<div class="numberOne">
+				<a href="aboutImage/Countdown.png"
+					><img src="aboutImage/Countdown.png" alt=""
+				/></a>
+				<div class="explain">
+					2. Countdown appears, enter your guess before it ends
+				</div>
+			</div>
+			<div class="numberOne">
+				<a href="aboutImage/Input.png"
+					><img src="aboutImage/Input.png" alt=""
+				/></a>
+				<div class="explain">
+					3. Enter your guess in this input box. Only number 1-100 is allowed
+				</div>
+			</div>
+			<div class="numberOne">
+				<a href="aboutImage/Guess.png"
+					><img src="aboutImage/Guess.png" alt=""
+				/></a>
+				<div class="explain">4. Then click 'Guess' button to submit.</div>
+			</div>
+			<div class="numberOne">
+				<a href="aboutImage/Answer.png"
+					><img src="aboutImage/Answer.png" alt=""
+				/></a>
+				<div class="explain">
+					5. Your current guess will appear on this box.
+				</div>
+			</div>
+			<div class="numberOne">
+				<a href="aboutImage/Feedback.png"
+					><img src="aboutImage/Feedback.png" alt=""
+				/></a>
+				<div class="explain">
+					6. Feedback will appear when countdown ends, providing the right
+					direction. The first to guess the number wins and earns a score.
+				</div>
+			</div>
+		</div>
+		<a href="index.html" class="back"><p><<<</p></a>
+	</body>
+</html>

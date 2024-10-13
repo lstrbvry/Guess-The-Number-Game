@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Guess the Number Game</title>
+		<link rel="stylesheet" href="style/color.css" />
+		<link rel="stylesheet" href="style/layout.css" />
+		<link rel="stylesheet" href="style/picture.css" />
+		<link rel="stylesheet" href="style/utils.css" />
+		<link rel="stylesheet" href="style/tutorial.css" />
+	</head>
+	<body>
+		<!-- <div class="tutorial">
+			<div class="step">
+				<p>
+					Type answer inside box below with 'Ans' label
+				</p>
+				<button>OK</button>
+			</div>
+		</div> -->
+		<div class="side-nav">
+			<button id="js-reset-score-button">
+				Reset 
+				Score
+			</button>
+			<button id="js-about-page" >
+				About
+			</button>
+		</div>
+		<div class="main js-main">
+			<div class="main-announcer js-main-announcer"></div>
+			<div class="main-countdown js-main-countdown">10</div>
+			<div class="main-display">
+				<button class="display-answer js-display-answer">Play</button>
+			</div> 
+			<div class="main-answers">
+				<div class="answers-box js-player-answer">
+					<div class="answers-content js-answer-content">...</div>
+					<div class="triangle"></div>
+				</div>
+				<input
+					type="number"
+					class="answers-text js-answers-text"
+					min="1"
+					placeholder="ans"
+					max="100" />
+				<div class="answers-box">
+					<div class="answers-content js-computer-answer">...</div>
+					<div class="triangle"></div>
+				</div>
+			</div>
+			<div class="main-profiles">
+				<div class="profile-box">
+					<div class="dialogue-box js-player-dialogue player-dialogue">...</div>
+					<div class="js-player-icon">
+						<img
+						src="image/playerIcon.png"
+						alt="Player icon"
+						class="profile-icon js-player-icon" />
+					</div>
+				</div>
+				<button class="guess-button js-guess-button">GUESS</button>
+				<div class="profile-box">
+					<div class="dialogue-box js-computer-dialogue-box computer-dialogue">...</div>
+					<div class="js-computer-icon">
+						<img
+						src="image/computerIcon.png"
+						alt="Computer icon"
+						class="profile-icon " />
+					</div>
+				
+				</div>
+			</div>
+			<div class="main-scoreboard">
+				<div class="scoreboard-container">
+					<div class="scoreboard-label">Player</div>
+					<div class="scoreboard-score js-player-score">0</div>
+				</div>
+				<div class="scoreboard-container">
+					<div class="scoreboard-label">Computer</div>
+					<div class="scoreboard-score js-computer-score">0</div>
+				</div>
+				<div class="scoreboard-container">
+					<div class="scoreboard-label">Total Game</div>
+					<div class="scoreboard-count js-game-total">0</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<script type="module" src="script/game2.js" ></script>
+	</body>
+</html>

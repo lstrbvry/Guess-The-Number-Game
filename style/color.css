@@ -1,0 +1,59 @@
+:root {
+	--Celeste: #adeee3;
+	--Celadon: #86deb7;
+	--Mint: #63b995;
+	--Fern-Green: #50723c;
+	--Darb-Dark-Brown: #423e28;
+}
+html {
+	color: var(--Darb-Dark-Brown);
+}
+body {
+	background-color: var(--Celeste);
+}
+
+.main-display {
+	background-color: var(--Celadon);
+}
+
+.main-answers {
+	background-color: var(--Celadon);
+}
+.main-profiles {
+	background-color: var(--Mint);
+}
+
+.answers-box {
+	background-color: var(--Mint);
+}
+.profile-box {
+	background-color: var(--Celadon);
+}
+
+.guess-button {
+	background-color: var(--Fern-Green);
+	color: var(--Celeste);
+}
+.main-countdown {
+	background-color: var(--Fern-Green);
+	color: var(--Celeste);
+	font-weight: 800;
+	font-size: 55px;
+}
+.main-scoreboard {
+	background-color: var(--Celadon);
+}
+.display-answer {
+	background-color: var(--Celeste);
+	color: var(--Fern-Green);
+}
+.display-answer:hover {
+	background-color: var(--Mint);
+}
+.side-nav {
+	background-color: var(--Mint);
+}
+.side-nav button {
+	background-color: #50723c;
+	color: var(--Celeste);
+}

@@ -1,0 +1,23 @@
+.tutorial {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.418);
+	z-index: 1200;
+}
+.step {
+	position: absolute;
+	background-color: white;
+	max-width: 233px;
+	text-align: center;
+	padding: 13px;
+	top: 0;
+	left: 50%;
+}
+
+.step button {
+	margin-top: 13px;
+	max-width: 33px;
+}

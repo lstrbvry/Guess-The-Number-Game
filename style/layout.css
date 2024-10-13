@@ -1,0 +1,134 @@
+:root {
+	--Padding-size: 1rem;
+	--Margin-size: 1rem;
+	--Triangle-size: 1rem;
+}
+* {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+}
+img {
+	max-width: 100%;
+}
+html {
+	font-family: Helvetica;
+}
+
+.main {
+	margin: auto;
+	display: grid;
+	grid-template-rows: 1.8fr 1fr 1fr 0.5fr;
+	/* min-height: 610px; */
+	/* min-height: 100vh; */
+	row-gap: 5px;
+	max-width: 610px;
+}
+
+.main-display {
+	max-width: 610px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.display-answer {
+	text-align: center;
+	font-weight: 800;
+	font-size: 55px;
+	min-height: 13px;
+	border: unset;
+	max-width: 244px;
+	border-radius: 13px;
+	padding: 21px;
+}
+.main-profiles,
+.main-answers {
+	max-width: 610px;
+}
+
+.main-answers,
+.main-profiles {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 5px;
+}
+
+.answers-box,
+.profile-box {
+	max-width: 144px;
+	min-height: 100%;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-weight: 800;
+	font-size: 34px;
+}
+
+.main-scoreboard {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-weight: 800;
+	padding-block: 8px;
+}
+.scoreboard-container {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	row-gap: 3px;
+}
+.guess-button {
+	padding-inline: 5px;
+}
+.scoreboard-score,
+.scoreboard-count {
+	font-size: 1.5rem;
+}
+.answers-text {
+	appearance: textfield;
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	padding: 3px;
+	max-width: 233px;
+}
+
+@media (600px > width) {
+	body {
+		padding-left: unset;
+		padding-top: 70px;
+	}
+	.display-answer {
+		text-align: center;
+		font-weight: 800;
+		font-size: 34px;
+		min-height: 13px;
+		border: unset;
+		max-width: 144px;
+		border-radius: 13px;
+		padding: 13px;
+	}
+	.answers-box {
+		font-size: 21px;
+	}
+	.guess-button {
+		font-size: 8px;
+		padding: 3px;
+		margin: 13px;
+	}
+}
+@media (810px > width) {
+	body {
+		padding-left: unset;
+		padding-top: 70px;
+	}
+}
